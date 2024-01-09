@@ -1,0 +1,7 @@
+https://api.themoviedb.org/3
+/movie/95479?language=pt-BR&append_to_response=aggregate_credits&api_key=${API_KEY}
+/trending/all/day?language=en-US&page=2&api_key=${API_KEY}
+
+imagens 
+
+https://image.tmdb.org/t/p/original
