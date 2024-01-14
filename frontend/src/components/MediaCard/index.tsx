@@ -7,6 +7,7 @@ interface MediaCardProps {
     title: string;
     poster_url: string;
     release_date: string;
+    media_type: string;
 }
 
 const MediaCard: React.FC<MediaCardProps> = ({
@@ -14,10 +15,11 @@ const MediaCard: React.FC<MediaCardProps> = ({
     poster_url,
     title,
     release_date,
+    media_type,
 }) => {
     return (
         <S.CardContainer>
-            <Link to={`/${id}`}>
+            <Link to={`/${media_type}/${id}`}>
                 <S.CardPoster src={poster_url} alt={title} />
             </Link>
             <S.CardTitle>{title}</S.CardTitle>
