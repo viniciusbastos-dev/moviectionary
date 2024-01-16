@@ -9,7 +9,6 @@ interface BtnIndicatorProps {
 }
 
 export const FormBox = styled.div`
-    width: 240px;
     position: relative;
     border-radius: 30px;
     background: #fff;
