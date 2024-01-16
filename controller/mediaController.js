@@ -25,9 +25,11 @@ mediaRouter.get("/info/:category/:id", (request, response, next) => {
 
     axios
         .get(
-            `${baseURL}/${category}/${id}?language=${lang}&append_to_response=aggregate_credits&api_key=${config.API_KEY}`
+            `${baseURL}/${category}/${id}?language=${lang}&append_to_response=${
+                category === "tv" ? "aggregate_credits" : "credits"
+            }&api_key=${config.API_KEY}`
         )
-        .then((response) => response.data)
+        .then((response) => Media.format(response.data))
         .then((formattedMedia) => response.json(formattedMedia))
         .catch((error) => next(error));
 });
