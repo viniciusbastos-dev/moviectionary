@@ -10,6 +10,6 @@ export const getTrending = (timeFrame: string) => {
 
 export const getMediaInfo = (type: string, id: string) => {
     return axios
-        .get(`/api/info/${type}/${id}`)
+        .get(`/api/info/${type}/${id}/?lang=${region}`)
         .then((response) => response.data);
 };
