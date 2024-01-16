@@ -1,27 +1,5 @@
 const baseURL = "https://image.tmdb.org/t/p/original";
 
-class Trending {
-    constructor(
-        backdrop_path,
-        poster_path,
-        media_type,
-        overview,
-        id,
-        title,
-        vote_percentage,
-        release_date
-    ) {
-        this.id = id;
-        this.title = title;
-        this.overview = overview;
-        this.media_type = media_type;
-        this.release_date = release_date;
-        this.vote_percentage = vote_percentage;
-        this.backdrop_url = baseURL + backdrop_path;
-        this.poster_url = baseURL + poster_path;
-    }
-}
-
 const format = (mediaDetails, lang) => {
     const {
         backdrop_path,
