@@ -1,12 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getMediaInfo } from "../services/requestHandler";
-import NotFound from "./NotFound";
+import { getMediaInfo } from "../../services/requestHandler";
+import NotFound from "../NotFound";
+import InfoBanner from "./components/InfoBanner";
+
+interface Genre {
+    id: number;
+    name: string;
+}
+
+export interface Media {
+    backdrop_url: string;
+    poster_url: string;
+    title: string;
+    overview: string;
+    tagLine: string;
+    release_date: string;
+    genres: Genre[];
+}
 
 const Info: React.FC = () => {
-    const [media, setMedia] = useState();
-
     const { type, id } = useParams();
+    const [media, setMedia] = useState<Media>();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,8 +42,7 @@ const Info: React.FC = () => {
 
     return (
         <>
-            <h1>PAGINA DE INFORMAÇÃO EM DESENVOLVIMENTO...</h1>
-            {/* Renderize os detalhes da mídia usando o estado 'media' conforme necessário */}
+            <InfoBanner {...media} />
         </>
     );
 };

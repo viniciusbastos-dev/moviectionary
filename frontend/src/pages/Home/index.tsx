@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
-import Banner from "../components/Banner";
-import Carousel from "../components/Carousel";
-import { getTrending } from "../services/requestHandler";
+import Banner from "../../components/Banner";
+import Carousel from "../../components/Carousel";
+import { getTrending } from "../../services/requestHandler";
 
 export interface TrendingType {
     id: number;

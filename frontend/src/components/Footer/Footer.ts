@@ -6,7 +6,6 @@ export const Footer = styled.footer`
     color: #FFF;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 300;
     gap: 20px;

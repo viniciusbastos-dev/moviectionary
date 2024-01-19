@@ -5,7 +5,6 @@ interface BackgroundProps {
 }
 
 export const Background = styled.section<BackgroundProps>`
-    font-family: "Roboto", sans-serif;
     background-image: url("${(props) => props.$backgroundImage}");
     background-size:cover;
     width: 100%;

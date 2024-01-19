@@ -11,7 +11,6 @@ export const Title = styled.h2`
 `;
 
 export const Wrapper = styled.div`
-    font-family: "Roboto", sans-serif;
     padding: 0 40px;
     display: flex;
     align-items: center;
