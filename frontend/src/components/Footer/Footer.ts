@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
     align-items: center;
-    border-top: 2px solid #9C2DE1;
+    border-top: 2px solid #2A7AE4;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const Footer = styled.footer`
 `;
 
 export const HighlightedText = styled.span`
-    color: #9C2DE1;
+    color: #2A7AE4;
     font-weight: 700;
 `;
 

@@ -15,7 +15,7 @@ export const FormBox = styled.div`
 `;
 
 export const ButtonBox = styled.div`
-    position: relative;
+
 `;
 
 export const ToggleButton = styled.button<ToggleButtonProps>`

@@ -23,6 +23,8 @@ const Info: React.FC = () => {
     const { type, id } = useParams();
     const [media, setMedia] = useState<Media>();
 
+    // TODO: Complete this page
+
     useEffect(() => {
         const fetchData = async () => {
             try {
