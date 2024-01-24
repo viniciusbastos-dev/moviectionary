@@ -76,7 +76,7 @@ Error generating stack: `+o.message+`
     border-bottom: 2px solid #2A7AE4;
 `,Z1=Y.img`
     height: 40px;
-`,eS=()=>j.jsx(J1,{children:j.jsx("a",{href:"/",children:j.jsx(Z1,{src:"/src/assets/logo.png",alt:"Logo do Moviectionary"})})}),tS=Y.footer`
+`,eS=()=>j.jsx(J1,{children:j.jsx("a",{href:"/",children:j.jsx(Z1,{src:"/logo.png",alt:"Logo do Moviectionary"})})}),tS=Y.footer`
     align-items: center;
     border-top: 2px solid #2A7AE4;
     color: #FFF;
@@ -92,7 +92,7 @@ Error generating stack: `+o.message+`
     font-weight: 700;
 `,rS=Y.img`
     height: 60px;
-`,iS=()=>j.jsxs(tS,{children:[j.jsx(rS,{src:"/src/assets/logo.png",alt:"Logo do Moviectionary"}),j.jsxs("p",{children:["Site feito por"," ",j.jsx(nS,{children:"Vinícius Bastos"})]})]}),oS=({children:e})=>j.jsx("main",{children:e}),lS=()=>j.jsxs(j.Fragment,{children:[j.jsx(eS,{}),j.jsx(oS,{children:j.jsx(A0,{})}),j.jsx(iS,{})]}),sS=Y.section`
+`,iS=()=>j.jsxs(tS,{children:[j.jsx(rS,{src:"/logo.png",alt:"Logo do Moviectionary"}),j.jsxs("p",{children:["Site feito por"," ",j.jsx(nS,{children:"Vinícius Bastos"})]})]}),oS=({children:e})=>j.jsx("main",{children:e}),lS=()=>j.jsxs(j.Fragment,{children:[j.jsx(eS,{}),j.jsx(oS,{children:j.jsx(A0,{})}),j.jsx(iS,{})]}),sS=Y.section`
     background-image: url("${e=>e.$backgroundImage}");
     background-size:cover;
     width: 100%;

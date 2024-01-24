@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <S.Header>
             <a href="/">
-                <S.Logo src="/src/assets/logo.png" alt="Logo do Moviectionary" />
+                <S.Logo src="/logo.png" alt="Logo do Moviectionary" />
             </a>
         </S.Header>
     );
