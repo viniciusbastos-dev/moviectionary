@@ -1,29 +1,33 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import * as S from "./Selector";
-import { SelectorStateType } from "../../pages/Home";
 
-const Selector: React.FC<SelectorStateType> = ({ timeFrame, setTimeFrame }) => {
+interface SelectorProps {
+    data: string;
+    setData: Dispatch<SetStateAction<string>>;
+}
+
+const Selector: React.FC<SelectorProps> = ({ data, setData }) => {
     const leftClick = () => {
-        setTimeFrame("day");
+        setData("day");
     };
 
     const rightClick = () => {
-        setTimeFrame("week");
+        setData("week");
     };
 
     return (
         <S.FormBox>
             <S.ButtonBox>
-                <S.BtnIndicator position={timeFrame} />
+                <S.BtnIndicator position={data} />
                 <S.ToggleButton
                     onClick={leftClick}
-                    selected={timeFrame === "day"}
+                    selected={data === "day"}
                 >
                     Hoje
                 </S.ToggleButton>
                 <S.ToggleButton
                     onClick={rightClick}
-                    selected={timeFrame === "week"}
+                    selected={data === "week"}
                 >
                     Semana
                 </S.ToggleButton>
